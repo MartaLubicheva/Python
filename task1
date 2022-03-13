@@ -1,0 +1,8 @@
+num = int(input("введите трехзначное число: "))
+
+num_one = num // 100
+num_two = num // 10 % 10
+num_three = num % 10
+
+print("Сумма цифр числа: ", num_one + num_two + num_three)
+print("Произведение цифр числа: ", num_one * num_two * num_three)
