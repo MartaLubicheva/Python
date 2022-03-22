@@ -1,0 +1,12 @@
+#Пользователь вводит две буквы. Определить, на каких местах алфавита они стоят, и сколько между ними находится букв.
+
+a = ord(input('1 bukva: '))
+b = ord(input('2 bukva: '))
+a = a - ord('a') + 1 
+b = b - ord('a') + 1
+
+print('Pozicii: %d i %d' % (a,b))
+print('Mezhdu bukvami symvolov: ', abs(a - b) - 1)
+n = int(input('nomer bukvi v alphavite: ')) # zadanie N 6
+n = ord('a') + n - 1 
+print('eto bukva', chr(n))

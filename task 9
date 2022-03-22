@@ -1,0 +1,13 @@
+#Вводятся три разных числа. Найти, какое из них является средним (больше одного, но меньше другого).
+
+print("vvedite tri chisla: ")
+a = int(input())
+b = int(input())
+c = int(input())
+
+if b < a < c or c < a < b:
+    print("srednee:", a)
+elif a < b or c < b < a:
+    print("srednee:", b)
+else:
+    print("srednee:",c)
