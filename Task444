@@ -1,0 +1,25 @@
+#Определить, какое число в массиве встречается чаще всего
+
+
+from random import random
+N = 10
+arr = [0] * N
+for i in range(N):
+    arr[i] = int(random() * 20)
+print(arr)
+ 
+num = arr[0]
+maxim = 1
+for i in range(N-1):
+    el = 1
+    for k in range(i+1,N):
+        if arr[i] == arr[k]:
+            el += 1
+    if el > maxim:
+        maxim = el
+        num = arr[i]
+ 
+if maxim > 1:
+    print(maxim, 'раз(а) встречается число', num)
+else:
+    print('Элементы уникальны')
