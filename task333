@@ -1,0 +1,19 @@
+#В массиве случайных целых чисел поменять местами минимальный и максимальный элементы.
+
+from random import random
+N = 15
+arr = [0] * N
+for i in range(N):
+    arr[i] = int(random() * 100)
+    print(arr[i], end =' ')
+print()
+ 
+minnum = min(arr)
+maxnum = max(arr)
+imin = arr.index(minnum)
+imax = arr.index(maxnum)
+print('MinNum[%d] = %d MaxNum[%d] = %d' % (imin + 1, minnum, imax + 1, maxnum))
+arr[imin], arr[imax] = arr[imax], arr[imin]
+for i in range(15):
+    print(arr[i], end =' ')
+print()
