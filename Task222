@@ -10,3 +10,6 @@ for i in range(N):
     arr[i] = randint(10, 19)
     if arr[i] % 2 == 0:
         even.append(i)
+
+print(arr)
+print('Индексы четных элементов: ', even)
